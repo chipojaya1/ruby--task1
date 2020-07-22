@@ -14,7 +14,7 @@ class  Player
         # Let's implement according to the example of the following types * Be careful to comment out when implementing while true
       while true
         # if Write a condition ("input_hand" (acquired value) is "0, 1, 2" In that case)
-        if input_hand == "0" || input_hand == "1" || input_hand == "2"
+        if input_hand == 0 || input_hand == 1 || input_hand == 2
           # "input_hand" (acquired value) is returned as is
             # Tips! Use "return".
           return input_hand
