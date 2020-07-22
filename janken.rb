@@ -89,12 +89,13 @@ enemy = Enemy.new
  # Substitute an instantiation of Janken for the variable "janken".
 janken = Janken.new
  # Assign "true" to the variable "next_game". * Unless the "next_game" is set to "false", the processing will be executed repeatedly with "forever".
+next_game = true
 # Let's implement according to the example of the type after
 # * Be careful to comment out when implementing while next_game
 while next_game
 # Substitute the value (return value) returned by executing rock-paper-scissors to the variable "next_game".
   # I'm running rock-paper-scissors with "janken.pon(player.hand, enemy.hand)".
-  Next_game = Janken.pon(player.hand, enemy.hand)
+  next_game = janken.pon(player.hand, enemy.hand)
   # When while the rock-paper-scissors execution result returns "false", this while is terminated. When "true" is returned, it keeps repeating that number of times.
 # end while statement
 end
