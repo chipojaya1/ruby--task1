@@ -38,7 +38,7 @@ end
 class  Enemy
   def  hand
     # Randomly output the values ​​of goo, joki and par. use rand
-    random_hand = rand(3).to_i
+    random_hand = rand(2).to_i
     # can also use the code below
     #rand  ( 0..2 )
     # since value for goo=1 joki=1 par=2
