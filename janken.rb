@@ -14,7 +14,7 @@ class  Player
         # Let's implement according to the example of the following types * Be careful to comment out when implementing while true
       while true
         # if Write a condition ("input_hand" (acquired value) is "0, 1, 2" In that case)
-        if input_hand == 0 ||  1 ||  2
+        if input_hand == "0" || input_hand == "1" || input_hand == "2"
           # "input_hand" (acquired value) is returned as is
             # Tips! Use "return".
           return input_hand
@@ -38,8 +38,9 @@ end
 class  Enemy
   def  hand
     # Randomly output the values ​​of goo, joki and par. use rand
-
-    rand  ( 0..2 )
+    random_hand = rand(3).to_i
+    # can also use the code below
+    #rand  ( 0..2 )
     # since value for goo=1 joki=1 par=2
     # end def statement
   end
